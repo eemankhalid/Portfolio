@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Deen Vision</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #eeb406;   
+            color: #fff;
+        }
+
+        .project-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-videos {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-videos video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .project-info {
+            text-align: left;
+            animation: slideUp 1.2s ease-in-out;
+            margin-top: 30px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            padding-left: 40px;
+        }
+
+        p {
+            color: #212529;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-page {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-page">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-videos">
+                <video controls>
+                    <source src="videos/deenvision1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="videos/deenvision2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+            </div>
+        </div>
+
+        <div class="project-info">
+            <h2>Deen Vision</h2>
+            <p>
+                Deen Vision is a modern, dynamic website built using React and Framer Motion, providing an immersive user experience with smooth animations and transitions. The site draws inspiration from platforms like InshallahJar, focusing on Islamic themes and products or services designed to inspire spiritual growth and mindfulness.
+            </p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Interactive UI:</strong> Leveraging Framer Motion, the site offers visually engaging animations that create a fluid, responsive experience.</li>
+                <li><strong>Islamic Products/Services:</strong>  Aimed at promoting Islamic values, the site showcases products and services with a spiritual focus.</li>
+                <li><strong>User-Centric Design:</strong> Clean, modern layouts make navigation seamless, ensuring users can explore content intuitively.</li>
+            </ul>
+            
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>Frontend: React, HTML, CSS, JavaScript</li>
+            </ul>
+            
+            <h3>User-Friendly Design:</h3>
+            <p>
+                The site combines technical excellence with thoughtful design to create a serene and engaging environment for its audience.
+            </p>
+        </div>
+
+
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <script>
+        const carouselVideos = document.querySelector('.carousel-videos');
+        const videos = document.querySelectorAll('.carousel-videos video');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let counter = 0;
+        const size = videos[0].clientWidth;
+
+        // Move to the current video
+        function updateCarousel() {
+            carouselVideos.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        // Next button
+        nextBtn.addEventListener('click', () => {
+            counter = (counter + 1) % videos.length;
+            updateCarousel();
+        });
+
+        // Previous button
+        prevBtn.addEventListener('click', () => {
+            counter = (counter - 1 + videos.length) % videos.length;
+            updateCarousel();
+        });
+    </script>
+
+</body>
+</html>

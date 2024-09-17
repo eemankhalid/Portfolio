@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip and Tour Services</title>
+     <!-- CSS FILES -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+         rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/bootstrap-icons.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link href="css/aos.css" rel="stylesheet">
+     <link href="css/index.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover{
+            background-color: #eeb406;   
+            color: #fff;
+        }
+
+        .project-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img, .carousel-images video {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .project-info {
+            text-align: left;
+            animation: slideUp 1.2s ease-in-out;
+            margin-top: 30px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            padding-left: 40px;
+        }
+
+        p {
+            color: #212529;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes textFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-page {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-page">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/tourism1.jpg" alt="Dr. Paint Project 1">
+                <img src="images/tourism2.jpg" alt="Dr. Paint Project 2">
+                <img src="images/tourism3.jpg" alt="Dr. Paint Project 3">
+                <video controls>
+                    <source src="videos/tourism.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+            </div>
+        </div>
+        
+        <div class="project-info">
+            <h2> Trip and Tour Services </h2>
+            <p>
+                The Trip and Tour Services website is a comprehensive platform built using HTML, CSS, JavaScript libraries, SCSS, and the WhatsApp API, designed to offer seamless travel booking and information about various destinations. The site highlights popular tourist spots, including detailed packages for Hajj and Umrah. By integrating WhatsApp API, users can directly connect with travel consultants for real-time inquiries and bookings.
+            </p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Destination Showcase:</strong> Users can explore various locations where the tours operate, from local to international trips.</li>
+                <li><strong>Hajj & Umrah Packages: </strong> Dedicated sections offer meticulously planned travel packages for religious pilgrimages, providing detailed itineraries and services.</li>
+                <li><strong>Real-Time Support:</strong> Integrated WhatsApp API allows customers to instantly communicate with the team for personalized travel assistance.</li>
+                <li><strong>Modern Design:</strong>Built with SCSS for a scalable and responsive design, the site ensures a user-friendly experience, optimized for both mobile and desktop browsing.</li>
+            </ul>
+            
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: MongoDB, Express Js, Node Js</li>
+            </ul>
+            
+            <h3>User-Friendly Design:</h3>
+            <p>
+                The clean and simple layout ensures a smooth browsing experience. Clients can easily explore services or consult experts for personalized advice.
+            </p>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <script>
+        const carouselImages = document.querySelector('.carousel-images');
+        const images = document.querySelectorAll('.carousel-images img, .carousel-images video');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        function updateCarousel() {
+            carouselImages.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            counter = (counter + 1) % images.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            counter = (counter - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+    </script>
+
+</body>
+</html>

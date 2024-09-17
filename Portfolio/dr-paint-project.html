@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Paint Project</title>
+     <!-- CSS FILES -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+         rel="stylesheet">
+ 
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/bootstrap-icons.css" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="css/magnific-popup.css">
+ 
+     <link href="css/aos.css" rel="stylesheet">
+ 
+     <link href="css/index.css" rel="stylesheet">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #eaeaea;
+            padding: 20px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover{
+            background-color: #eeb406;   
+            color: #fff;
+        }
+
+        .project-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-controls button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .project-info {
+            text-align: left;
+            animation: slideUp 1.2s ease-in-out;
+            margin-top: 30px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            padding-left: 40px;
+        }
+        p{
+            color: #212529;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes textFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-page {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="project-page">
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/drPaint1.jpg" alt="Dr. Paint Project 1">
+                <img src="images/drPaint2.jpg" alt="Dr. Paint Project 2">
+                <img src="images/drPaint3.jpg" alt="Dr. Paint Project 3">
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+            </div>
+        </div>
+        
+        <div class="project-info">
+            <h2>Dr. Paint</h2>
+            <p>
+                Dr. Paint is a web platform designed to showcase professional painting projects, services, and consultancy solutions. Built using HTML, CSS, and JavaScript for the frontend and MongoDB for the backend, the site offers a modern, user-friendly interface with a smooth experience.
+            </p>
+            
+            <h3>Key Features:</h3>
+            <ul>
+                <li><strong>Project Showcase:</strong> A gallery of past and ongoing painting projects, providing potential clients with a visual overview of the quality and variety of services.</li>
+                <li><strong>Services Section:</strong> Detailed descriptions of various painting services, including residential, commercial, and industrial projects.</li>
+                <li><strong>Consultancy:</strong> A dedicated section where users can get expert advice on color selection, surface preparation, and other painting-related queries.</li>
+                <li><strong>Backend and Database:</strong> MongoDB ensures smooth data management for projects, customer inquiries, and services.</li>
+            </ul>
+            
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: MongoDB, Express Js, Node Js</li>
+            </ul>
+            
+            <h3>User-Friendly Design:</h3>
+            <p>
+                The clean and simple layout ensures a smooth browsing experience. Clients can easily explore services or consult experts for personalized advice.
+            </p>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <script>
+        const carouselImages = document.querySelector('.carousel-images');
+        const images = document.querySelectorAll('.carousel-images img');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        // Move to the current image
+        function updateCarousel() {
+            carouselImages.style.transform = `translateX(${-size * counter}px)`;
+        }
+
+        // Next button
+        nextBtn.addEventListener('click', () => {
+            counter = (counter + 1) % images.length;
+            updateCarousel();
+        });
+
+        // Previous button
+        prevBtn.addEventListener('click', () => {
+            counter = (counter - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+    </script>
+
+</body>
+</html>
